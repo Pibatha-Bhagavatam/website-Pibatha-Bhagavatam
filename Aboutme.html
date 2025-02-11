@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(./Assets/AboutMe/Minimalist\ Vintage\ Line\ A4\ Stationery\ Paper\ Document.jpg) no-repeat center center/cover;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(101, 131, 106, 0.411);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: transparent;
+            color: #FFFFFF;
+            text-decoration: none;
+            border: 2px solid #FFFFFF;
+            border-radius: 26px;
+            transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+        }
+        .back-btn:hover {
+            transform: scale(1.1);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 1024px) { /* Tablet */
+            .container {
+                max-width: 90%;
+                padding: 15px;
+            }
+            .profile-img {
+                width: 130px;
+                height: 130px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        
+        @media (max-width: 768px) { /* Mobile */
+            .container {
+                max-width: 80%;
+                padding: 10px;
+            }
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .back-btn {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    <div class="container">
+        <img src="./Assets/Images/3.png" alt="Profile Picture" class="profile-img">
+        <h1>Sruthi Kailas</h1>
+        <h2>About Me</h2>
+        <p>Namaskaram! I am Daasanudasi, a passionate Carnatic musician and dedicated teacher, carrying forward the rich legacy of my Gurunathai, Smt. Seetha Lakshmi. As the successor and granddaughter of the great Sri Lakshmanan Bhagavatar of Alampallam, Kollengode, I strive to spread the divine essence of sangeetham and Bhagavata dharmam through my teachings.
+
+            With over 16 years of rigorous training in Carnatic music, I founded Pibatha Sangeetam, where students embark on a structured and devotional journey in music. Our courses cover beginner to advanced levels, offering in-depth training in Swara Sadhana, Raga elaborations, and compositions of great saints like Thyagaraja, Jayadeva, and more. Each class is designed to nurture devotion and discipline, enriching students with the spiritual essence of Bhagavata Dharma.
+            
+            Through my music, I seek to inspire, guide, and uplift students, helping them experience the divine through the beauty of Carnatic melodies.</p>
+            <h2>More About Pibatha Bhagavatam</h2>
+            <p>Pibatha Bhagavatam is a humble initiative dedicated to spreading the profound wisdom of Sanathana Dharma through sacred texts, music, and devotion. Rooted in the teachings of Bhagavata Dharma, this platform serves as a space for spiritual seekers to immerse themselves in the timeless glories of the Bhagavatam, Thiruppavai, Ashtapathy, and the compositions of great saints.
+    
+                Our mission is to preserve and propagate divine knowledge, making it accessible to all who seek spiritual growth and inner transformation. Through structured courses, publications, and devotional discourses, Pibatha Bhagavatam aims to nurture a deep connection with the Bhakti tradition, fostering devotion, discipline, and divine realization.
+                
+                Let us come together in the sacred journey of listening, learning, and living the Bhagavata way.
+                
+                🌿 Pibatha Bhagavatam – Drink Deep the Nectar of Divine Wisdom! 🙏</p>
+            <h2>About Pibatha Sangeetam</h2>
+            <p>Pibatha Sangeetam is a sacred space for learning and experiencing the divine essence of Carnatic music. Rooted in the rich tradition of Bhagavata Dharma, our mission is to impart the timeless wisdom of sangeetham with devotion, discipline, and dedication.
+
+                Our structured courses cover beginner to advanced levels, guiding students through:
+                🎶 Swara Sadhana – Mastering the fundamentals of pitch, rhythm, and voice culture.
+                🎶 Raga Elaboration – Understanding and exploring the melodic depth of ragas.
+                🎶 Compositions of Great Saints – Learning the keerthanas of Thyagaraja, Jayadeva, and more, experiencing the Bhakti and philosophy behind their music.
+                
+                Every lesson is designed not just to teach music but to nurture devotion, allowing students to connect with the spiritual power of each note and raga. At Pibatha Sangeetam, music is not merely an art—it is a sadhana, a path to self-discovery and divine bliss.
+                
+                🌿 Pibatha Sangeetam – Learn, Experience, and Cherish the Essence of Carnatic Music! 🙏🎶</p>
+        <a href="./index.html" class="back-btn">Back to Home</a>
+    </div>
+
+</body>
+</html>
